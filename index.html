@@ -1,12 +1,577 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/admin/demo/demo12/media/img/logo/logo.svg')}}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+
+    <title>Ramzino</title>
 </head>
+
 <body>
-    
+    <header class="header_info ">
+        <div class="" style="width: 100%;height: 30px;">
+
+        </div>
+        <div class="theme-main-menu" id="navbar">
+
+            <nav class="navbar navbar-expand-lg navbar-light " style="direction: rtl">
+                <a class="navbar-brand" href="#">Ramzino</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">ثبت نام <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ورود</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ویدیو معرفی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">محصولات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ارتباط با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> وبلاگ </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="" class="btn btn-outline-success  mb-4 mr-3  rounded-pill nav-log mt-3">
+                            <span>
+
+                                <span>
+                                    ورود
+                                </span>
+                                <span>
+                                    <i class="fas fa-arrow-left ml-2" style="vertical-align: middle"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0 rounded" type="submit">ورود</button> -->
+                        <img src="{{ asset('image/type-new.gif') }}" class="pb-1" style="width: 130px;height: 10%; display: inline-block;vertical-align: middle" alt="">
+                        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid pb-5">
+
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-end ml-4 mt-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <img src="{{ asset('image/k.png') }}" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 mt-3 mb-5 ">
+                    <h1 class="title-h mt-5 pt-5">
+                        اولین سایت و مجموعه برای خرید و فروش انلاین تمامی ارز های اینترنتی
+                    </h1>
+                    <p class="header-p">
+                        به جمع میلیونی رمز اینو وارد شوید
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-5 ">
+                            <a href="{{ route('register') }}" class="btn btn-light rej_main_btn text-center">همین حالا
+                                شروع کن </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="stock-market-price">
+                <div class="owl-carousel1 owl-carousel  owl-theme owl-loaded" id="market-rate">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="main-wapper">
+                                        <div class="amount eth" 1></div>
+
+                                        <h6 class="tittle"> قیمت اتریوم</h6>
+                                        <div class="current-info range-down">
+                                            <i class="icon flaticon-down-caret"></i>
+                                            <span class="rate eth-rate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="main-wapper">
+                                        <div class="amount usdt"></div>
+                                        <h6 class="tittle"> قیمت تتر</h6>
+                                        <div class="current-info range-down">
+                                            <i class="icon flaticon-down-caret"></i>
+                                            <span class="rate usdt-rate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="main-wapper">
+                                        <div class="amount btc"></div>
+                                        <h6 class="tittle"> قیمت بیت کوین</h6>
+                                        <div class="current-info range-down">
+                                            <i class="icon flaticon-down-caret"></i>
+                                            <span class="rate btc-rate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="main-wapper">
+                                        <div class="amount xrp"></div>
+                                        <h6 class="tittle"> قیمت ریپل</h6>
+                                        <div class="current-info range-down">
+                                            <i class="icon flaticon-down-caret"></i>
+                                            <span class="rate xrp-rate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="main-wapper">
+                                        <div class="amount doge"></div>
+                                        <h6 class="tittle"> قیمت دوج</h6>
+                                        <div class="current-info range-down">
+                                            <i class="icon flaticon-down-caret"></i>
+                                            <span class="rate doge-rate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime">
+            <img src="{{ asset('image/1.png') }}" alt="responsive image" class="img-fluid first-anime">
+            <img src="{{ asset('image/2.png') }}" alt="responsive image" class="img-fluid second-anime">
+        </div>
+    </header>
+    <section class="table">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-10 col-md-6 col-lg-6 mb-3">
+                    <h1 class="text-center mt-5">
+                        آخرین آگهی ها
+                    </h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-xl mb-0">
+                            <thead>
+                                <tr>
+                                    <th>وضعیت</th>
+                                    <th>قیمت</th>
+                                    <th>تاریخ</th>
+                                    <th>مقدار</th>
+                                    <th>نام کاربری</th>
+                                    <th>نام ارز</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($ads as $ad)
+                                <tr>
+                                    <td class="text-truncate">
+                                        <a href="{{ route('dashboard.ads.show', $ad->id) }}" class="mb-0 px-4 btn-sm btn btn-outline-primary round" style="    border-radius: 1.5rem;">خرید</a>
+                                    </td>
+                                    <td>
+                                        <span style="float: right">{{ $ad->getTotal() }}</span>
+                                        <span class="ml-2">تومان</span>
+                                    </td>
+                                    <td>{{ $ad->getCreationDate()->ago() }}</td>
+                                    <td>{{ $ad->quantity }}</td>
+                                    <td>{{ $ad->user->displayName() }}</td>
+                                    <td>{{ $ad->currency->name }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="our-features-one">
+        <div class="container">
+            <div class="theme-title">
+                <h2>
+                    بهترین و بزرگ ترین
+                    <span>خرید و فروش ارز</span>
+                    <br>
+                    سرتاسر ایران
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="single-feature">
+                        <div class="icon-box">
+                            <img src="{{ asset('image/5.png') }}" alt="">
+                        </div>
+                        <h3>فروش بی واسطه</h3>
+                        <p>
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="single-feature">
+                        <div class="icon-box">
+                            <img src="{{ asset('image/6.png') }}" alt="">
+                        </div>
+                        <h3>
+                            امنیت پرداخت
+                        </h3>
+                        <p>
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="single-feature">
+                        <div class="icon-box">
+                            <img src="{{ asset('image/7.png') }}" alt="">
+                        </div>
+                        <h3>
+                            فروش بی واسطه
+                        </h3>
+                        <p>
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <section class="our-feature-two">
+        <div class="container">
+            <div class="row single-block">
+                <div class="col-lg-6">
+                    <div class="text" style="padding-bottom: 68px">
+                        <div class="number">
+                            01
+                        </div>
+                        <h2 class="tittle">
+                            عنوان
+                        </h2>
+                        <p>
+                            ست. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <a href="#" class="learn-more"> اطلاعات بیشتر
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 img-box">
+                    <img src="{{ asset('image/logo.png') }}" alt="" class="img-fluid ">
+                </div>
+            </div>
+            <div class="row single-block justify-content-end">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="text">
+                        <div class="number">
+                            02
+                        </div>
+                        <h2 class="tittle">
+                            عنوان
+                        </h2>
+                        <p>
+                            ست. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <a href="#" class="learn-more"> اطلاعات بیشتر
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 order-lg-first img-box">
+                    <img src="{{ asset('image/logo2.png') }}" alt="" class="img-fluid  ">
+                </div>
+            </div>
+            <div class="row single-block">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <div class="number">
+                            03
+                        </div>
+                        <h2 class="tittle">
+                            عنوان
+                        </h2>
+                        <p>
+                            ست. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <a href="#" class="learn-more"> اطلاعات بیشتر
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 img-box">
+                    <img src="{{ asset('image/logo3.png') }}" alt="" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="theme-counter">
+        <div class="container">
+            <div class="bg-imge">
+                <div class="row theme-title justify-content-around">
+                    <div class="col-lg-6 order-lg-last">
+                        <h2>
+                            <span>سریع ترین</span>
+                            برای تبادل <br>
+                            ارز های دیجیتالی
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 order-lg-first text-center">
+                        <p class="text-center" style="padding-left: 0px">
+                            ست. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف .
+                        </p>
+                    </div>
+                </div>
+                <div class="counter-wrapper">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div id="count"><span class="count my-added">200</span></div>
+                            <p>مشتریان حاضر</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="count"><span class="count my-added">200</span></div>
+                            <p>مشتریان حاضر</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="count"><span class="count my-added">200</span></div>
+                            <p>مشتریان حاضر</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="count"><span class="count my-added">200</span></div>
+                            <p>مشتریان حاضر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partner-section">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-2">
+                    <img src="{{ asset('svg\bitcoin.svg') }}" alt="bitcoin" class="img-fluid">
+                </div>
+                <div class="col-2">
+                    <img src="{{ asset('svg\dogecoin.svg') }}" alt="dogecoin" class="img-fluid">
+                </div>
+                <div class="col-2">
+                    <img src="{{ asset('svg\ripple.svg') }}" alt="rippel" class="img-fluid">
+                </div>
+                <div class="col-2">
+                    <img src="{{ asset('svg\ethereum.svg') }}" alt="ethereum" class="img-fluid">
+                </div>
+                <div class="col-2">
+                    <img src="{{ asset('svg\tether.svg') }}" alt="tether" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="theme-footer">
+        <div class="container">
+            <div class="inner-wrapper">
+                <div class="top-footer-data-wrapper">
+                    <div class="row ">
+
+                        <div class="col-lg-3 col-sm-6 footer-list">
+                            <div class="title">
+                                درباره ما
+                            </div>
+                            <ul>
+                                <li><a href="#">کارهای ما</a></li>
+                                <li><a href="#">راه های ارتباط</a></li>
+                                <li><a href="#">هماکاران</a></li>
+                                <li><a href="#">رویداد ها </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 footer-list">
+                            <div class="title">
+                                درباره ما
+                            </div>
+                            <ul>
+                                <li><a href="#"> سوالات متداول</a></li>
+                                <li><a href="#"> نحوه خرید </a></li>
+                                <li><a href="#">هماکاران</a></li>
+                                <li><a href="#">رویداد ها </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 footer-list">
+                            <p class="mt-3">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای
+                                زیادی در شصت .
+                            </p>
+                            <script src="https://www.zarinpal.com/webservice/TrustCode" type="text/javascript"></script>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="bottom-footer clearfix">
+                    <p class="copyright">
+                        2019@
+                        تمامی حقوق مطعلق به سایت می باشد
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        function add_chatinline() {
+            var hccid = 31229501;
+            var nt = document.createElement("script");
+            nt.async = true;
+            nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid;
+            var ct = document.getElementsByTagName("script")[0];
+            ct.parentNode.insertBefore(nt, ct);
+        }
+
+    </script>
+
+
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/scrollIt.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/srcolfy.js') }}"></script>
+    <script src="{{ asset('js/easing.js') }}"></script>
+
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function toPersianNum(num, dontTrim) {
+
+            var i = 0,
+
+                dontTrim = dontTrim || false,
+
+                num = dontTrim ? num.toString() : num.toString().trim(),
+                len = num.length,
+
+                res = '',
+                pos,
+
+                persianNumbers = typeof persianNumber == 'undefined' ? ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'] :
+                persianNumbers;
+
+            for (; i < len; i++)
+                if ((pos = persianNumbers[num.charAt(i)]))
+                    res += pos;
+                else
+                    res += num.charAt(i);
+
+            return res;
+        }
+
+        function formatNum(n) {
+
+            var n = ('' + n).split('.');
+            var num = n[0];
+            var dec = n[1];
+            var r, s, t;
+
+            if (num.length > 3) {
+                s = num.length % 3;
+
+                if (s) {
+                    t = num.substring(0, s);
+                    num = t + num.substring(s).replace(/(\d{3})/g, "،$1");
+                } else {
+                    num = num.substring(s).replace(/(\d{3})/g, "،$1").substring(1);
+                }
+            }
+
+            if (dec && dec.length > 3) {
+                dec = dec.replace(/(\d{3})/g, "$1 ");
+            }
+
+            return num + (dec ? '.' + dec : '');
+        }
+
+        var coins = ['btc', 'eth', 'usdt', 'doge', 'xrp'];
+        coins.forEach(function (coin) {
+            $.ajax({
+                method: 'GET',
+                url: `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${coin.toUpperCase()}&tsyms=IRR,USD`,
+                dataType: 'json',
+            }).done(function (result) {
+
+                var changePercentageSpan = $(`.${coin}-rate`);
+                var changePercentage = result.RAW[coin.toUpperCase()].USD.CHANGEPCT24HOUR.toFixed(2);
+                changePercentageSpan.html(String(changePercentage) + ' % ');
+                changePercentage > 0 ? changePercentageSpan.css('color', 'green') : changePercentageSpan.css('color', 'red');
+                $(`.${coin}`).html('  <span class="ajax-t">تومان</span> ' + toPersianNum(formatNum(String(Math.round(result.RAW[coin.toUpperCase()].IRR.PRICE / 10)))));
+            });
+        });
+
+    </script>
+
 </body>
+
 </html>
